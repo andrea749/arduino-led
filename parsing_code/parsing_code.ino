@@ -18,7 +18,7 @@ void setup() {
   FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
   FastLED.setBrightness( BRIGHTNESS );
   // time, LED #, on/off
-  vector<float> note0 {0.0, 2.0, 1.0};  "[.000927382638, 12, 0]"
+  vector<float> note0 {0.0, 2.0, 1.0};  
   vector<float> note1 {0.25, 2.0, 0.0};
   vector<float> note2 {0.25, 3.0, 1.0};
   vector<float> note3 {0.25, 4.0, 1.0};
