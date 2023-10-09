@@ -134,7 +134,7 @@ void loop() {
         Serial.println(song[i][j]);
 
       }
-      int pitch = (int)curr_note[1];
+      int pitch = (int)song[i][1];
       Serial.println("pitch");
       Serial.println(pitch);
       Serial.println("pitch222");
@@ -143,7 +143,7 @@ void loop() {
         pitch *= -1;
       }
       // Black == LED off
-      leds[pitch] = (curr_note[2] == 0.0) ? CRGB::Black : CRGB::Purple;
+      leds[pitch] = (song[i][2] == 0.0) ? CRGB::Black : CRGB::Purple;
     }
     // set delay, subtract timestamp of current window from timestamp of next window
     // error: if last note is at the same time as prev note, we might not clear the LEDs at the same time. potentially doesn't matter
